@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26122022</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            width: fit-content;
+            height: 100vh;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg,orange,white,green,blue,yellow,white,orange);
+            
+        }
+        #container{
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20%;
+            position: relative;
+            top: 100px;
+            left:50px ;
+            transition: 1s;
+            border: 2px double white;
+            animation-name: container;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            @keyframes container
+             {
+                form{
+                    transform:translate(300px,-300px);
+                    color:red;
+                }
+                to{
+                    transform:rotate(180deg,-180deg);
+                    color:green;
+                }
+                
+                
+            }
+        
+            
+
+
+
+        }
+        #container:hover{
+            width: 100px;
+            height: 100px;
+            background:darkgoldenrod;
+            transition: 5s;
+            transform: translateX(100px);
+            transform: rotateX(360deg);
+            transform: scalex(30px);
+            transform: skew(360deg);
+            top: 100px;
+            left: 50px;
+
+
+        }
+        #a1{
+            width: 100px;
+            height: 100px;
+            background:red;
+            transition: 5s;
+            border-radius: 10%;
+
+        }
+        #a2{
+            width: 100px;
+            height: 100px;
+            background:cornflowerblue;
+            transition: 5s;
+            border-radius: 50%;
+            margin: 10px;
+            left: 10px;
+            top: 100px;
+
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div id="container">
+        <div id="a1"></div>
+        <div id="a2"></div>
+        <div id="a3"></div>
+        </div>
+        <div id="cone">
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            </div>
+            <div id="circle">
+                <div id="c1"></div>
+                <div id="c2"></div>
+                <div id="c3"></div>
+                </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>box</title>
+    <style>
+        body{
+            background: black;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .box{
+            width: 400px;
+            height: 200px;
+            background: cyan;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            transition: 1s;
+            border-radius: 50%;
+            
+            
+        }
+        .box:hover{
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg,red,blue,yellow,white);
+            transition: 1s;
+          /*  transform:translate(400px,300px) ;
+            transform: rotateX(360deg,240deg);
+            transform: scale(-180px,180px);*/
+            transform: skew(100%);
+            
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

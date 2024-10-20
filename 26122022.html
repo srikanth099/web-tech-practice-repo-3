@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            margin: 100px;
+            padding: 100px;
+            box-shadow: 0 0 15px blue;
+            top: 200px;
+            left: 200px;
+
+
+
+        }
+        .circle{
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(45deg,lightblue,white,green,orange,brown,white,orange,blue);
+            transition: 1s;
+
+
+        }
+        img:hover{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            top: 200px;
+            left: 100px;
+            transition: 1s;
+            transform: translate(50px,50px);
+            animation-name: img;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+            @keyframes img {
+                25%{
+                    transform:translateX(300px) rotatez(360px)
+                }
+                50%{
+                    transform:translatey(300px) rotatez(-360deg)
+                    
+                }
+                75%{ 
+                    transform:translateX(-300px) rotatez(360deg)
+
+                }
+                100%{
+                    transform:translatey(-300px) rotatez(-360deg)
+                }
+                
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="circle">
+    <img src="https://i.pinimg.com/originals/bf/f4/8f/bff48f31c649bd8b691f6e8b548958a7.jpg" alt="nature">
+
+   </div> 
+</body>
+</html>

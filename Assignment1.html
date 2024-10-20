@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        #parent
+        {
+            width: 300px;
+            margin:100px auto;
+            height: 300px;
+            border-radius: 0px;
+        }
+        #parent:hover
+        {
+            cursor: pointer;
+            background-image:url("https://thumbs.dreamstime.com/b/sunrise-sunset-love-romance-birds-concept-flock-flying-heart-formation-behind-them-95869871.jpg");
+            background-size: cover;
+            margin-bottom: -300px;
+            height: 300px; 
+            transition: all 1s linear 3s;
+            transform: scale(2,2);
+        }
+        .dcut
+        {
+
+            margin-top: -300px;
+            background-color:blue;
+        }
+        #parent:hover>.dcut
+        {
+            margin-bottom: -300px;
+            height: 300px; 
+            transform: translateX(300%);
+            transform: translateY(-300%);
+            background-color: black;
+            background-size: cover;
+            transition: all 3s linear 2s;
+        }
+      
+        #bimg
+        {
+            margin-top: -300px;
+        }
+        div:hover>#bimg
+        {
+             margin-bottom: -300px;
+        }
+        body
+        {
+            background-color: black;
+        }
+        #done
+        {
+            box-shadow: 0 0 10px greenyellow;
+            width: 150px;
+            height: 300px;
+            transform-origin: left;
+            background-color: deeppink;
+            margin-left: 0px;
+            margin-top: 100px;
+        }
+        div:hover>#done
+        {
+            transform-origin: left;
+            background-color: deeppink;
+            transition: all 2s linear 0s;
+            transform: perspective(800px) rotateY(-160deg)
+        }
+        #dtwo
+        {
+            box-shadow: 0 0 10px greenyellow;
+            width: 150px;
+            height: 300px;
+            transform-origin: right;
+            background-color: deeppink;
+            margin-left: 150px;
+            margin-top: -300px;
+        }
+        div:hover>#dtwo
+        {
+            transform-origin: right;
+            background-color: deeppink;
+            transition: all 2s linear 0s;
+            transform: perspective(800px) rotateY(160deg)
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+       <div id="done"></div>
+       <div id="dtwo"></div>
+       <div class="dcut"></div>
+       <div id="bimg"></div>
+    </div>
+</body>
+</html>

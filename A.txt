@@ -1,0 +1,13 @@
+class B{
+public void m1()
+{
+System.out.println("m1 from B");
+}
+}
+class A extends A{
+public static void main(String[] args){
+System.out.println("hello world");
+A a=new A();
+a.m1();
+}
+}
